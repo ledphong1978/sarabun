@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h1><font color="blue"> ธุรการออนไลน์ แจ้งเตือนทางไลน์ </font></h1>
+
+<table>
+  <tr>
+    <th>ลำดับที่</th>
+    <th>ชื่อเรื่อง</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>อบรม LTAX3000</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>อบรม elaas</td>
+  </tr>
+</table>
+
+<br><label id = "lbl4">ระบุหน่วยงาน</label>
+
+<select id="enterdata4">
+    <option value="1">สำนักงานปลัด</option>
+    <option value="2">กองสาธารณสุข</option>
+    <option value="3">กองการศึกษา</option>
+    <option value="4">กองคลัง</option>
+    <option value="5">กองช่าง</option>
+    <option value="6">กองสวัสดิการสังคม</option>
+ </select>
+
+ <input id="enterdata" type="Number" size="10"/>
+ <button id="btnDownload"onclick="downloadData()">ดาวน์โหลดไฟล์</button>
+ <br><br>
+ 
+ <script>
+   function downloadData()
+   {
+      var a=document.getElementById("enterdata").value;
+	  
+	  switch(a) {
+         case "1":
+            window.open("http://www.dla.go.th/upload/document/type2/2020/7/23889_1_1595217316984.pdf?time=1595927207698");
+            break;
+         case "2":
+            window.open("http://www.dla.go.th/upload/document/type2/2020/7/23829_1_1594696587618.pdf?time=1595927361916");
+            break;
+         default:
+            text = "No data";
+      }  		   
+    }
+
+
+
+	
+	
+  </script>
+
+</body>
+</html>
